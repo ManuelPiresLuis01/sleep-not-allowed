@@ -1,0 +1,47 @@
+{
+  "name": "sleep-not-allowed",
+  "version": "1.0.0",
+  "description": "Keep your server awake with configurable health checks.",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/test-core.mjs",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.mjs\" \"*.json\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.mjs\" \"*.json\"",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelPiresLuis01/sleep-not-allowed.git"
+  },
+  "keywords": [
+    "keep-alive",
+    "server",
+    "health-check",
+    "uptime",
+    "ping",
+    "sleep-not-allowed"
+  ],
+  "author": "Manuel Pires Luis",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ManuelPiresLuis01/sleep-not-allowed/issues"
+  },
+  "homepage": "https://github.com/ManuelPiresLuis01/sleep-not-allowed#readme",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
+  }
+}
