@@ -1,6 +1,6 @@
 {
   "name": "sleep-not-allowed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keep your server awake with configurable health checks.",
   "types": "./dist/index.d.ts",
   "exports": {
