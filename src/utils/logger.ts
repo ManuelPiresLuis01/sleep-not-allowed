@@ -14,10 +14,7 @@ export const logger = {
       `${cyan}${bold}╔══════════════════════════════════════════════════╗${reset}`
     );
     console.log(
-      `${cyan}${bold}║              SLEEP-NOT-ALLOWED                  ║${reset}`
-    );
-    console.log(
-      `${cyan}${bold}║              by Manuel Pires Luís               ║${reset}`
+      `${cyan}${bold}║              SLEEP-NOT-ALLOWED                   ║${reset}`
     );
     console.log(
       `${cyan}${bold}╚══════════════════════════════════════════════════╝${reset}`
