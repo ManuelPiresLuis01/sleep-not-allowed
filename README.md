@@ -1,5 +1,9 @@
 # SLEEP-NOT-ALLOWED
 
+[![npm version](https://img.shields.io/npm/v/sleep-not-allowed)](https://www.npmjs.com/package/sleep-not-allowed)
+[![npm downloads](https://img.shields.io/npm/dt/sleep-not-allowed)](https://www.npmjs.com/package/sleep-not-allowed)
+[![license](https://img.shields.io/npm/l/sleep-not-allowed)](https://github.com/ManuelPiresLuis01/sleep-not-allowed)
+
 Keep a server deployment active with periodic HTTP health-check requests to a URL.
 
 ## Contributors
