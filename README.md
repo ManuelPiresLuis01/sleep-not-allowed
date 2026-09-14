@@ -183,7 +183,7 @@ npm test
   <tr>
     <td align="center">
       <a href="https://www.manuelpiresluis.site">
-        <img src="https://www.manuelpiresluis.site/assets/foto-perfil-B3C4QR9r.jpg" width="120" height="120" alt="Manuel Pires Luís" style="border-radius: 50%; object-fit: cover;" />
+        <img src="https://avatars.githubusercontent.com/u/166626626?v=4" width="120" height="120" alt="Manuel Pires Luís" style="border-radius: 50%; object-fit: cover;" />
         <br />
         <sub><b><a href="https://github.com/ManuelPiresLuis01/">Manuel Pires Luís</a></b></sub>
       </a>

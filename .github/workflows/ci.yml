@@ -9,6 +9,8 @@ on:
     branches:
       - main
       - dev
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
   validate:
@@ -35,3 +37,29 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Run server tests
+        run: node test/test-server.mjs
+
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install published package
+        run: |
+          mkdir -p "$RUNNER_TEMP/package-install"
+          cd "$RUNNER_TEMP/package-install"
+          npm init -y
+          npm install sleep-not-allowed
+
+      - name: Audit dependencies
+        run: npm audit --prefix "$RUNNER_TEMP/package-install" --audit-level=low
